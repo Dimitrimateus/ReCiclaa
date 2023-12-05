@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="reciclado.png" />
+    <title>Reciclopédia</title>
+  </head>
+
+  <body>
+    <!--Logo-->
+    <header>
+      <img src="logo.png" alt="Logo" width="70" class="logo" />
+    </header>
+
+    <!--Links e Barra de Pesquisa-->
+    <nav>
+      <a href="index.html">Pagina Inicial</a>
+      <a href="aboutus.html">Sobre nós</a>
+      <a href="contacts.html">Contatos</a>
+
+      <div class="lixeiras">
+        <img
+          src="lixeiras-de-coleta-seletiva-3.jpg"
+          alt="lixeiras"
+          height="90px"
+        />
+        <div class="lixeiras-dropdown">
+          <a id="vidro" href="vidro.html" class="aumentar">Vidro</a><br /><br />
+          <a id="papel" href="papel.html" class="aumentar">Papel</a><br /><br />
+          <a id="metal" href="metal.html" class="aumentar">Metal</a><br /><br />
+          <a id="plastico" href="plastico.html" class="aumentar">Plástico</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--Vale Luz-->
+
+    <section>
+      <h1>Vale-Luz</h1>
+    </section>
+
+    <article>
+      <!-- ... (seu código HTML existente) ... -->
+
+<!-- Login e Senha -->
+<div class="login-container">
+  <form class="login-form" id="loginForm">
+    <input type="text" placeholder="Usuário" class="login-input" id="username" />
+    <input type="password" placeholder="Senha" class="login-input" id="password" />
+    <button type="submit" class="login-button">Login</button>
+  </form>
+</div>
+
+<!-- ... (seu código HTML existente continua) ... -->
+
+      <div class="texto">
+        <p>
+          Transformar resíduo sólido em desconto na conta de energia é muito
+          fácil!<br />
+          <br />
+          O Vale Luz é um projeto da Neoenergia Pernambuco que prevê diversos
+          benefícios, como a troca de resíduos sólidos por descontos na conta de
+          energia. O projeto além de reduzir o valor da conta de energia dos
+          moradores, ainda tem o objetivo de estimular o uso racional dos
+          recursos naturais e minimizar os impactos negativos causados pelos
+          resíduos no meio ambiente, estimulando a reciclagem. <br />
+        </p>
+        <p>
+          Materiais aceitos pelo Projeto Vale Luz: <br /><br />
+
+          <b>Papel e ​Papelão:</b> Jornais,Revistas, Livros, Cadernos (sem capa
+          e sem aspiral) e ​Caixas<br /><br />
+
+          <b>Plásticos:</b> PET (embalagens de detergente, g​arrafas PET,
+          sacolas).​​<br /><br />
+
+          <b>Metal:</b> Latas de alumínio (refrigerante, cerveja, suco), Latas
+          de aço, Latas de produtos alimentícios (leite em pó e conservas),
+          Aerossol desodorante, Alumínio<br /><br />
+
+          <b>Vidro:</b> Embalagens de Vidro​.<br /><br />
+          ​​
+          <b>Óleo vegetal:</b> Óleo de soja, canola, girassol, gergelim,
+          amendoim, milho, coco, algodão e mamona.<br /><br />
+
+          ​
+          <b>Eletrônico:</b> CPU com placa mãe, televisores, monitores, celular,
+          impressoras.<br /><br />
+        </p>
+      </div>
+
+      <div class="imagem">
+        <img src="mainimage.png" alt="Reciclagem" class="reciclagem-meio" />
+      </div>
+    </article>
+    
+    <!--Leia Mais-->
+    <aside></aside>
+
+    <!--Rodapé-->
+    <footer>
+    
+      <div class="rodape">
+        <hr />
+        <br />
+        <div class="copyright">
+          <h2>Site desenvolvido com fins educacionais.</h2>
+        </div>
+      </div>
+      <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+    
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+    
+          const validUsername = 'rec';
+          const validPassword = '123';
+    
+          if (username === validUsername && password === validPassword) {
+            alert('Login bem-sucedido! Redirecionando para a página de doações.');
+            // Redirecionar para a página de doações após o login bem-sucedido
+            window.location.href = 'pagina-doacoes.html?username=' + username;
+          } else {
+            alert('Login inválido. Por favor, verifique suas credenciais.');
+          }
+        });
+      </script>
+    </footer>
+  </body>
+</html>
